@@ -1,0 +1,524 @@
+[
+  {
+    "transportUrl": "https://torrentio.strem.fun/providers=yts,eztv,rarbg,1337x,thepiratebay,kickasstorrents,torrentgalaxy,magnetdl,rutor,rutracker%7Cpremiumize=nttpm82ju7jecxsj/manifest.json",
+    "transportName": "http",
+    "manifest": {
+      "id": "com.stremio.torrentio.addon",
+      "version": "0.0.14",
+      "name": "Torrentio PM",
+      "description": "Provides torrent streams from scraped torrent providers. Currently supports YTS(+), EZTV(+), RARBG(+), 1337x(+), ThePirateBay(+), KickassTorrents(+), TorrentGalaxy(+), MagnetDL(+), HorribleSubs(-), NyaaSi(-), TokyoTosho(-), AniDex(-), Rutor(+), Rutracker(+), Comando(-), BluDV(-), Torrent9(-), MejorTorrent(-), Cinecalidad(-) and Premiumize enabled. To configure providers, RealDebrid/Premiumize/AllDebrid/DebridLink/Offcloud/Put.io support and other settings visit https://torrentio.strem.fun",
+      "catalogs": [
+        {
+          "id": "torrentio-premiumize",
+          "name": "Premiumize",
+          "type": "other",
+          "extra": [
+            {
+              "name": "skip"
+            }
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "name": "stream",
+          "types": [
+            "movie",
+            "series"
+          ],
+          "idPrefixes": [
+            "tt",
+            "kitsu"
+          ]
+        },
+        {
+          "name": "meta",
+          "types": [
+            "other"
+          ],
+          "idPrefixes": [
+            "premiumize"
+          ]
+        }
+      ],
+      "types": [
+        "movie",
+        "series",
+        "anime",
+        "other"
+      ],
+      "background": "https://i.ibb.co/VtSfFP9/t8wVwcg.jpg",
+      "logo": "https://i.ibb.co/w4BnkC9/GwxAcDV.png",
+      "behaviorHints": {
+        "configurable": true,
+        "configurationRequired": false
+      }
+    }
+  },
+  {
+    "transportUrl": "https://ea627ddf0ee7-easynews.baby-beamup.club/%7B%22username%22%3A%22dansays%22%2C%22password%22%3A%22hitachi21%22%7D/manifest.json",
+    "transportName": "http",
+    "manifest": {
+      "id": "community.stremioeasynews",
+      "version": "1.0.2",
+      "catalogs": [],
+      "resources": [
+        "stream"
+      ],
+      "types": [
+        "movie",
+        "series"
+      ],
+      "name": "Easynews",
+      "background": "https://images.pexels.com/photos/2521619/pexels-photo-2521619.jpeg",
+      "logo": "https://pbs.twimg.com/profile_images/479627852757733376/8v9zH7Yo_400x400.jpeg",
+      "description": "Get streams from Easynews",
+      "idPrefixes": [
+        "tt"
+      ],
+      "behaviorHints": {
+        "configurable": true
+      },
+      "config": [
+        {
+          "title": "username",
+          "key": "username",
+          "type": "text"
+        },
+        {
+          "title": "password",
+          "key": "password",
+          "type": "password"
+        }
+      ]
+    }
+  },
+  {
+    "transportUrl": "https://hy-uhd.vercel.app/manifest.json",
+    "transportName": "http",
+    "manifest": {
+      "id": "hy.uhdm.stream",
+      "version": "1.0.0",
+      "name": "HY UHDMovies",
+      "description": "Streams From uhdmovie.store",
+      "logo": "https://raw.githubusercontent.com/mik25/hy-tv/main/hy.jpg",
+      "resources": [
+        {
+          "name": "stream",
+          "types": [
+            "movie",
+            "series",
+            "anime"
+          ],
+          "idPrefixes": [
+            "tt",
+            "kitsu"
+          ]
+        }
+      ],
+      "types": [
+        "movie",
+        "series",
+        "anime",
+        "other"
+      ],
+      "catalogs": []
+    }
+  },
+  {
+    "transportUrl": "https://lati-jackedd.onrender.com/manifest.json",
+    "transportName": "http",
+    "manifest": {
+      "id": "daiki.jackettpb1.stream",
+      "version": "1.0.1",
+      "name": "Jackett Latino",
+      "description": "Movie & TV Streams from Jackett ",
+      "logo": "https://raw.githubusercontent.com/daniwalter001/daniwalter001/main/52852137.png",
+      "resources": [
+        {
+          "name": "stream",
+          "types": [
+            "movie",
+            "series"
+          ],
+          "idPrefixes": [
+            "tt",
+            "kitsu"
+          ]
+        }
+      ],
+      "types": [
+        "movie",
+        "series",
+        "anime",
+        "other"
+      ],
+      "catalogs": []
+    }
+  },
+  {
+    "transportUrl": "https://m3u-test.cyclic.app/eyJ1c2VybmFtZSI6IkthcmVuIiwicGFzc3dvcmQiOiIwMzE3IiwiQmFzZVVSTCI6Imh0dHA6Ly9lbnZ5dHYueHl6OjI1NDYxIn0/manifest.json",
+    "transportName": "http",
+    "manifest": {
+      "id": "org.community.envytv.xyz",
+      "version": "1.0.0",
+      "name": "envytv.xyz IPTV",
+      "description": "You will access to your envytv.xyz IPTV with this addon!",
+      "idPrefixes": [
+        "etvz:"
+      ],
+      "catalogs": [
+        {
+          "id": "etvz:movie",
+          "name": "envytv.xyz",
+          "type": "movie",
+          "extra": [
+            {
+              "name": "genre",
+              "options": [],
+              "isRequired": true
+            }
+          ],
+          "isRequired": true
+        },
+        {
+          "id": "etvz:series",
+          "name": "envytv.xyz",
+          "type": "series",
+          "extra": [
+            {
+              "name": "genre",
+              "options": [],
+              "isRequired": true
+            }
+          ],
+          "isRequired": true
+        },
+        {
+          "id": "etvz:tv",
+          "name": "envytv.xyz",
+          "type": "tv",
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "01 - USA Entertainment",
+                "02 - ABC Locals",
+                "03 -CBS Locals",
+                "04 - FOX Locals",
+                "04a -Fox Affiliates MYTV",
+                "05 - NBC Locals",
+                "06 - Movie Networks",
+                "07 - USA Docs",
+                "08 - US News",
+                "09 - USA Kids",
+                "11 - PPV + Special Events",
+                "12 - Religion ",
+                "13 - USA Sports and Outdoors",
+                "14 - NFL",
+                "14a - NCAAF",
+                "14b - NCAAB",
+                "15 - NBA",
+                "15 - NBA-LP",
+                "16 - MLB",
+                "17 - NHL ",
+                "18 - Golf",
+                "19 - TENNIS",
+                "ESPN",
+                "NBC/Fox Sports",
+                "PAC-12 Networks",
+                "Dirtvision",
+                "FITE TV",
+                "24/7 - SK",
+                "24/7 Action & Adventure",
+                "24/7 Cartoon",
+                "24/7 Classic Shows",
+                "24/7 Comedy",
+                "24/7 Cooking",
+                "24/7 Crime",
+                "24/7 Daytime Drama",
+                "24/7 Documentary",
+                "24/7 Drama",
+                "24/7 Kids & Family",
+                "24/7 Movies",
+                "24/7 Music",
+                "24/7 Mysteries",
+                "24/7 News",
+                "24/7 Reality",
+                "24/7 Sci-Fi",
+                "24/7 Shows",
+                "24/7 Soaps",
+                "24/7 Talk",
+                "24/7 Western"
+              ],
+              "isRequired": true
+            }
+          ]
+        }
+      ],
+      "resources": [
+        "catalog",
+        "meta",
+        "stream"
+      ],
+      "types": [
+        "movie",
+        "series",
+        "tv"
+      ],
+      "behaviorHints": {
+        "configurable": true,
+        "configurationRequired": false
+      }
+    }
+  },
+  {
+    "transportUrl": "https://jj-flix.onrender.com/manifest.json",
+    "transportName": "http",
+    "manifest": {
+      "id": "com.yourmoviestreamsaddon",
+      "version": "1.0.0",
+      "name": "JJ Flix",
+      "description": " Pel\u00edculas de transmisiones de IPTV",
+      "resources": [
+        "catalog",
+        "stream",
+        "meta"
+      ],
+      "types": [
+        "movie"
+      ],
+      "idPrefixes": [
+        "tt"
+      ],
+      "catalogs": [
+        {
+          "type": "movie",
+          "id": "yourmoviestreams-movies",
+          "name": "Your Movie Streams",
+          "genres": [
+            "All"
+          ],
+          "extra": [
+            {
+              "name": "genre"
+            },
+            {
+              "name": "skip"
+            },
+            {
+              "name": "search"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "transportUrl": "https://m3u-test.cyclic.app/eyJ1c2VybmFtZSI6ImlwdHYuMjEyMSIsInBhc3N3b3JkIjoiYmhmY1N6ZENDNWhTIiwiQmFzZVVSTCI6Imh0dHA6Ly9ib3h0cmVhbS5jbzo4MDgwIn0/manifest.json",
+    "transportName": "http",
+    "manifest": {
+      "id": "org.community.boxtream.co",
+      "version": "1.0.0",
+      "name": "boxtream.co IPTV",
+      "description": "You will access to your boxtream.co IPTV with this addon!",
+      "idPrefixes": [
+        "beo:"
+      ],
+      "catalogs": [
+        {
+          "id": "beo:movie",
+          "name": "boxtream.co",
+          "type": "movie",
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "ESTRENOS 2024",
+                "PELICULAS 2023",
+                "PELICULAS 2022",
+                "ESTRENOS CAM (GRABADO DE CINE)",
+                "SAGAS",
+                "CRONOLOGIA MARVEL",
+                "ESPECIAL NAVIDAD",
+                "DC COMICS",
+                "INFANTILES Y ANIMACI\u00d3N",
+                "FANTASIA",
+                "ACCION Y CRIMEN",
+                "B\u00c9LICAS",
+                "DRAMA Y SUSPENSO",
+                "AVENTURA Y FAMILIAR",
+                "CIENCIA FICCION",
+                "PELICULAS ANIME",
+                "PELICULAS 4K",
+                "ROMANCE",
+                "COMEDIA",
+                "TERROR Y MISTERIO",
+                "PELICULAS LATINAS",
+                "PELICULAS SD 480P",
+                "PELICULAS VARIADAS (provisoria)",
+                "CONCIERTOS",
+                "PELICULAS ELVIS PRESLEY",
+                "FESTIVAL VI\u00d1A DEL MAR 2023",
+                "SEMANA SANTA",
+                "DOCUMENTAL",
+                "KARAOKES",
+                "CRISTIANAS",
+                "PELICULAS MUSICALES",
+                "PELICULAS RETRO",
+                "PELICULAS MEXICANAS",
+                "WESTERN",
+                "PELICULAS ARTES MARCIALES",
+                "WWE",
+                "PELICULAS 2022 (AUDIO CASTELLANO) ",
+                "PELICULAS NETFLIX (AUDIO CASTELLANO)",
+                "PELICULAS DISNEY (AUDIO CASTELLANO)",
+                "PELICULAS HBO (AUDIO CASTELLANO)",
+                "PELICULAS RETRO (AUDIO CASTELLANO)",
+                "PELICULAS VARIADAS (AUDIO CASTELLANO)",
+                "INFIELES",
+                "ADULTOS VOD XXX"
+              ],
+              "isRequired": true
+            }
+          ],
+          "isRequired": true
+        },
+        {
+          "id": "beo:series",
+          "name": "boxtream.co",
+          "type": "series",
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "SERIES NETFLIX",
+                " SERIES PRIME VIDEO",
+                "SERIES HBO MAX",
+                "SERIES STAR +",
+                "SERIES DISNEY +",
+                " SERIES INFANTIL Y ANIMACI\u00d3N",
+                "SERIES ACCION Y AVENTURAS",
+                "SERIES PARAMOUNT +",
+                "SERIES STARZPLAY",
+                "SERIES APPLE TV+",
+                "SERIES ViX+",
+                "SERIES AMC+",
+                "SERIES UNIVERSAL +",
+                "SERIES MOVISTAR +",
+                "SERIES ATRESPLAYER",
+                " SERIES CRIMEN",
+                " SERIES COMEDIA",
+                " SERIES DRAMA",
+                "SERIES ADULTS CARTOON",
+                "SERIES RETRO",
+                "SERIES RETRO INFANTILES",
+                " SERIES ANIME",
+                "SERIES TERROR Y SUSPENSO",
+                "SERIES DORAMAS",
+                "TELENOVELAS",
+                "TELENOVELAS CHILENAS",
+                "NARCO-SERIES",
+                "SERIES TURCAS",
+                "SERIES DOCUMENTALES",
+                " SERIES CHILENAS",
+                "SERIES ECU"
+              ],
+              "isRequired": true
+            }
+          ],
+          "isRequired": true
+        },
+        {
+          "id": "beo:tv",
+          "name": "boxtream.co",
+          "type": "tv",
+          "extra": [
+            {
+              "name": "genre",
+              "options": [
+                "\u2728 EVENTOS DEPORTIVOS 06 DE ENERO (se encienden en el HORARIO del Evento",
+                "\u2b50 EVENTOS STAR + \u2b50",
+                "\u2b50 EVENTOS APPLE TV+ \u2b50",
+                "\u26bd LIGAS DE F\u00daTBOL LATINOAM\u00c9RICA",
+                "DEPORTES \u029c\u1d05",
+                "DEPORTES \ua731\u1d05",
+                "TUDN",
+                "CHILE",
+                "MEGA GO",
+                "CHILE REGIONALES",
+                "ECUADOR ",
+                "COLOMBIA",
+                "PER\u00da",
+                "ARGENTINA",
+                "URUGUAY",
+                "PARAGUAY",
+                "BOLIVIA",
+                "BRAZIL",
+                "CINE",
+                "ENTRETENCI\u00d3N Y CULTURA",
+                "NOVELAS",
+                "INFANTIL",
+                "M\u00daSICA",
+                "RADIO SE\u00d1ALES",
+                "24/7 EXCLUSIVOS",
+                "24/7 PPV",
+                "MEXICO",
+                "PLUTO TV MEXICO",
+                "PLUTO TV BRAZIL",
+                "PLUTO TV USA",
+                "PLUTO TV CANADA",
+                "PLUTO TV ESPA\u00d1A",
+                "USA PREMIUM",
+                "USA KIDS Y FAMILY",
+                "USA DOCUMENTALS",
+                "USA LOCALS",
+                "USA: TELEMUNDO Y UNIVISION",
+                "GALAVISI\u00d3N Y UNIMAS",
+                "CANADA",
+                "ESPA\u00d1A",
+                "DEPORTES ESPA\u00d1A",
+                "DZN PPV",
+                "CANALES NOTICIAS",
+                "NBA PASS",
+                "MLS PASS",
+                "MLB PASS",
+                "NHL PASS",
+                "NFL PASS",
+                "RELIGIOSOS",
+                "COSTA RICA",
+                "EL SALVADOR",
+                "HONDURAS",
+                "NICARAGUA",
+                "PANAM\u00c1",
+                "PUERTO RICO",
+                "REP\u00daBLICA DOMINICANA",
+                "GUATEMALA",
+                "VENEZUELA",
+                "CUBA",
+                "PORTUGAL",
+                "HOLANDA",
+                "ADULTOS XXX"
+              ],
+              "isRequired": true
+            }
+          ]
+        }
+      ],
+      "resources": [
+        "catalog",
+        "meta",
+        "stream"
+      ],
+      "types": [
+        "movie",
+        "series",
+        "tv"
+      ],
+      "behaviorHints": {
+        "configurable": true,
+        "configurationRequired": false
+      }
+    }
+  }
+]
